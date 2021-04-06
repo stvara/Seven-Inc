@@ -1,8 +1,8 @@
-const banco = require('./index')
+/*const banco = require('./index')
 
 
-    async function inicio(){
-        const container = document.getElementById('container');
+        async function inicio(){
+            const container = document.getElementById('container');
                     container.innerHTML=""
                     alert("o2la")
         
@@ -73,4 +73,4 @@ const banco = require('./index')
                 container.appendChild(listar)
                 
                     
-        }
+        }*/

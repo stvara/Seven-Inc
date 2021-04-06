@@ -8,7 +8,6 @@ async function connect(){
     global.connection = connection;
     return connection;
 }
-connect();  
 
 
 async function selecionarEmpregados(){
