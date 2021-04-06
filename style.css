@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(65, 139, 139);
+}
+
+#container{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    background-color: rgb(65, 139, 139);
+    width: 100%;
+    
+}
+.botoes{
+    position: relative;
+    width: 167px;
+    background-color: aqua;
+    text-align: center;
+    top: 200px;
+}
+.botao{
+    position: relative;
+    margin: 10px;
+    width: 150px;    
+}
+.lista{
+    width: 700px;
+    height: 200px;
+    position: relative;
+    top: 150px;
+    background-color: rgb(35, 230, 230);
+}
