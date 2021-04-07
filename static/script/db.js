@@ -15,17 +15,17 @@ async function selecionarEmpregados(){
     return await rows;
 }
 
-async function inserirEmpregado(empregado){
+async function inserirEmpregado(employees){
     const conectar = await connect();
         const sql = 'INSERT INTO employees(nome,bornDate,salary,position) VALUES (?,?,?,?);'
-        const values=[empregado.name,empregado.bornDate,empregado.salary,empregado.position];
+        const values=[employees.name,employees.bornDate,employees.salary,employees.position];
         return await conectar.query(sql,values);
     }
 
-async function editarEmpregado(id,empregado){
+async function editarEmpregado(id,employees){
     const conectar = await connect()
     const sql = 'UPDATE employees SET nome=?,bornDate=?,salary=?,position=? WHERE id=?';
-    const values = [empregado.name,empregado.bornDate,empregado.salary,empregado.position]
+    const values = [employees.name,employees.bornDate,employees.salary,employees.position]
     return await conectar.query(sql,values)
 }
 async function apagarEmpregado(id){

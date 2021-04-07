@@ -84,18 +84,18 @@ async function inicio(){
 
         inicio()
         
-      let empregado={
+      let employees={
           "id": 0,
           "name": "samuel",
           "bornDate":"1996-03-07",
           "position":"desenvolvedor",
           "salary": 1800
 
-      }
+      }//testador
         const listar = document.createElement('div')
             listar.className="lista"
 
-            listar.innerHTML=` <p> Nome: ${empregado.name} Data de nascimento:${empregado.bornDate} Cargo:${empregado.position} Salário ${empregado.salary} <button>Editar</button> <button>Deletar</button>`
+            listar.innerHTML=` <p> Nome: ${employees.name} Data de nascimento:${employees.bornDate} Cargo:${employees.position} Salário ${employees.salary} <button>Editar</button> <button>Deletar</button>`
            
      
             container.appendChild(listar)
@@ -109,7 +109,7 @@ async function inicio(){
     const salary = document.getElementById("salary").value
 
    
-    const empregado= {
+    const employees= {
     "name": name,
     "bornDate": bornDate,
     "position" : position,
@@ -119,11 +119,11 @@ async function inicio(){
     
     
     
-    if(empregado.name != ""){
-        if(empregado.bornDate != ""){
-            if(empregado.salary != ""){
-                if (empregado.position != ""){
-                    let cadastrar = await db.inserirEmpregado(empregado);
+    if(employees.name != ""){
+        if(employees.bornDate != ""){
+            if(employees.salary != ""){
+                if (employees.position != ""){
+                    let cadastrar = await db.inserirEmpregado(employees);
                     
                 }else{alert("preencha Cargo:")}
             }else{alert("preencha Salário:")}
